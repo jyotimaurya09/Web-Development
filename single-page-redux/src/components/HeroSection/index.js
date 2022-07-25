@@ -23,7 +23,17 @@ const HeroSection = () => {
             Sign up for a free account today and receive 2 one-on-one session with our experts.
           </HeroP>
           <HeroBtnWrapper>
-            <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} >
+            <Button to="signup" 
+              onMouseEnter={onHover} 
+              onMouseLeave={onHover}
+              primary='true'
+              dark='true' 
+              smooth={true} 
+              duration={500} 
+              spy={true} 
+              offset={-80} 
+              exact='true' 
+            >
               Get started {hover? <ArrowForward /> : <ArrowRight />} 
             </Button>
           </HeroBtnWrapper>
